@@ -16,7 +16,7 @@ export default defineConfig({
           { text: '🏠 メインページ', link: '/' },
           // ↓↓↓ 文字の前に画像タグを直接埋め込みます ↓↓↓
           { 
-            text: '<img src="../icons/kefka.png" style="width:18px; height:18px; display:inline-block; vertical-align:middle; margin-right:6px;"> 絶妖星乱舞', 
+            text: '<img src="/ffxivmemo/icons/kefka.png" style="width:18px; height:18px; display:inline-block; vertical-align:middle; margin-right:6px;"> 絶妖星乱舞', 
             link: '/kefka' 
           }
         ]
