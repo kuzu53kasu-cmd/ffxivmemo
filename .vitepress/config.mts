@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   base: '/ffxivmemo/', 
+  appearance: 'dark', 
   title: "memo", // サイト全体のタイトル
   description: "",
 
