@@ -15,14 +15,10 @@ export default defineConfig({
         items: [
           { text: '🏠 メインページ', link: '/' },
           
-          // ↓↓↓ HTMLタグを廃止し、VitePress公式の「icon」指定に書き換えます ↓↓↓
           { 
-            text: '絶妖星乱舞', 
-            link: '/kefka', // ※VitePress内での内部リンクは頭の /ffxivmemo は不要です
-            icon: {
-              src: '/icons/kefka.png', // public/icons/kefka.png を指す正しい書き方
-              alt: 'ケフカ'
-            }
+            // ↓↓↓ 変更ポイント：src="ffxivmemo/..." と、先頭のスラッシュ「 / 」を消します！ ↓↓↓
+            text: '<img src="ffxivmemo/icons/kefka.png" style="width:18px; height:18px; display:inline-block; vertical-align:middle; margin-right:6px;"> 絶妖星乱舞', 
+            link: '/kefka' // 内部リンクはこれでOK
           }
         ]
       }
