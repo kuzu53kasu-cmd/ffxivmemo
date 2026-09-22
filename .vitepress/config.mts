@@ -15,11 +15,8 @@ export default defineConfig({
         items: [
           { text: '🏠 メインページ', link: '/' },
           
-          { 
-            // ↓↓↓ 変更ポイント：src="ffxivmemo/..." と、先頭のスラッシュ「 / 」を消します！ ↓↓↓
-            text: '<img src="ffxivmemo/icons/kefka.png" style="width:18px; height:18px; display:inline-block; vertical-align:middle; margin-right:6px;"> 絶妖星乱舞', 
-            link: '/kefka' // 内部リンクはこれでOK
-          }
+          // ↓↓↓ HTMLタグをすべて消去し、シンプルな文字だけにします！ ↓↓↓
+          { text: '絶妖星乱舞', link: '/kefka' }
         ]
       }
     ],

@@ -63,3 +63,18 @@
   cursor: not-allowed;
   pointer-events: none;
 }
+
+.VPLink[href*="kefka"]::before {
+  content: "";
+  display: inline-block;
+  width: 20px;   /* アイコンの横幅（好きなサイズに調整してOK） */
+  height: 20px;  /* アイコンの縦幅 */
+  
+  /* 画像の引き出し住所（GitHub Pages用にリポジトリ名から記述） */
+  background-image: url('/ffxivmemo/icons/kefka.png'); 
+  
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin-right: 8px; /* 画像と文字の間のすき間 */
+}
