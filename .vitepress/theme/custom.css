@@ -1,0 +1,65 @@
+/* 画像付きリンクカード全体の並び方（横並び、スマホでは縦並び） */
+.card-container {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  padding: 0 20px;
+}
+
+/* カード1枚ずつのデザイン */
+.strategy-card {
+  width: 320px;
+  background-color: #1b1b1f; /* ダークモードに馴染む黒 */
+  border: 1px solid #2e2e32;
+  border-radius: 12px;
+  overflow: hidden;
+  text-decoration: none !important;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+/* マウスを乗せたときにフワッと浮き上がって光る演出 */
+.strategy-card:hover {
+  transform: translateY(-5px);
+  border-color: #ff9800; /* FF14っぽいオレンジの光 */
+  box-shadow: 0 8px 24px rgba(255, 152, 0, 0.15);
+}
+
+/* 画像の部分 */
+.card-image-wrapper {
+  width: 100%;
+  aspect-ratio: 16 / 9; /* 綺麗な横長（16:9）に固定 */
+  overflow: hidden;
+  background-color: #000;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 画像が切り替わっても綺麗に収める */
+}
+
+/* カード下部の「ボタンテキスト」部分 */
+.card-button-text {
+  padding: 16px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  border-top: 1px solid #2e2e32;
+  background-color: #202024;
+}
+
+/* マウス乗せた時に文字をオレンジに */
+.strategy-card:hover .card-button-text {
+  color: #ff9800;
+}
+
+/* 準備中のカード用（半透明にしてクリックできなくする） */
+.strategy-card.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
