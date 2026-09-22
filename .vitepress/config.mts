@@ -2,8 +2,6 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   base: '/ffxivmemo/', 
-    // ↓↓↓ この1行を追加して保存します ↓↓↓
-  cleanUrls: true,
   title: "memo", // サイト全体のタイトル
   description: "",
 
@@ -14,9 +12,11 @@ export default defineConfig({
         text: 'menu',
         items: [
           { text: '🏠 メインページ', link: '/' },
-          
-          // ↓↓↓ HTMLタグをすべて消去し、シンプルな文字だけにします！ ↓↓↓
-          { text: '絶妖星乱舞', link: '/kefka' }
+          // ↓↓↓ 文字の前に画像タグを直接埋め込みます ↓↓↓
+          { 
+            text: '<img src="kefka.png" style="width:18px; height:18px; display:inline-block; vertical-align:middle; margin-right:6px;"> 絶妖星乱舞', 
+            link: '/kefka' 
+          }
         ]
       }
     ],
