@@ -18,6 +18,15 @@ hero:
     </div>
   </a>
 
+  <a href="/ffxivmemo/tools" class="strategy-card">
+    <div class="card-image-wrapper">
+      <img src="/icons/tools.png" alt="tools" class="card-image">
+    </div>
+    <div class="card-button-text">
+      🔧 tools
+    </div>
+  </a>
+
   <!-- 別のコンテンツ（準備中）のカード（増やしたい時はこれをコピー） -->
   <div class="strategy-card disabled">
     <div class="card-image-wrapper">

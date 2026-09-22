@@ -64,18 +64,93 @@
   pointer-events: none;
 }
 
-/* 「kefka」へのリンクの左側に、ケフカのアイコン画像を強制的に合成する */
-.VPLink[href*="kefka"]::before {
-  content: "";
-  display: inline-block;
-  width: 18px;   /* 画像のサイズ */
-  height: 18px;
-  
-  /* ↓↓↓ 【超重要】この「 url("~@/...") 」という書き方に変更して保存します！ ↓↓↓ */
-  background-image: url("~@/../public/icons/kefka.png");
-  
-  background-size: contain;
-  background-repeat: no-repeat;
-  vertical-align: middle;
-  margin-right: 6px; /* 文字との隙間 */
+/* カテゴリの折りたたみ */
+.vp-doc .tool-category {
+  margin: 20px 0;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 12px;
+  background: var(--vp-c-bg-soft);
+  overflow: hidden;
+}
+
+.vp-doc .tool-category > summary {
+  padding: 18px 20px;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.vp-doc .tool-category > summary:hover {
+  background: var(--vp-c-default-soft);
+}
+
+.vp-doc .tool-category[open] > summary {
+  border-bottom: 1px solid var(--vp-c-divider);
+}
+
+/* PCは2列、スマホは1列 */
+.tool-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  padding: 18px;
+}
+
+/* カード全体をリンクに */
+.vp-doc a.tool-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  min-width: 0;
+  padding: 18px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 10px;
+  background: var(--vp-c-bg);
+  color: var(--vp-c-text-1);
+  text-decoration: none;
+  overflow-wrap: anywhere;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.vp-doc a.tool-card:hover {
+  border-color: #ff9800;
+  box-shadow: 0 4px 16px rgb(255 152 0 / 12%);
+}
+
+.tool-card-title {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.tool-card-title > span {
+  color: var(--vp-c-text-3);
+}
+
+.tool-card-description {
+  color: var(--vp-c-text-2);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.tool-card-tag {
+  margin-top: auto;
+  padding: 2px 9px;
+  border-radius: 6px;
+  background: var(--vp-c-default-soft);
+  color: var(--vp-c-text-2);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+
+@media (max-width: 640px) {
+  .tool-grid {
+    grid-template-columns: 1fr;
+    padding: 12px;
+  }
 }
