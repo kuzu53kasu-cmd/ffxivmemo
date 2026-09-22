@@ -1,4 +1,3 @@
-# VitePressをGitHub Pagesに自動公開するための公式設定
 name: Deploy VitePress site to Pages
 
 on:
@@ -32,8 +31,8 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Build with VitePress
-        run:
-          chmod +x ./node_modules/.bin/vitepress 
+        run: |
+          chmod +x ./node_modules/.bin/vitepress
           npm run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
