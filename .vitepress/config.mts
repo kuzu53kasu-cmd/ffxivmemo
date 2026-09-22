@@ -12,11 +12,9 @@ export default defineConfig({
         text: 'menu',
         items: [
           { text: '🏠 メインページ', link: '/' },
-          // ↓↓↓ 文字の前に画像タグを直接埋め込みます ↓↓↓
-          { 
-            text: '<img src="ffxivmemo/icons/kefka.png" style="width:18px; height:18px; display:inline-block; vertical-align:middle; margin-right:6px;"> 絶妖星乱舞', 
-            link: '/kefka' 
-          }
+          
+          // ↓↓↓ 余計なHTMLタグをすべて消し、シンプルな文字だけにします ↓↓↓
+          { text: '絶妖星乱舞', link: '/kefka' }
         ]
       }
     ],

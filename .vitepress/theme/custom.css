@@ -64,3 +64,18 @@
   pointer-events: none;
 }
 
+/* 「kefka」へのリンクの左側に、ケフカのアイコン画像を強制的に合成する */
+.VPLink[href*="kefka"]::before {
+  content: "";
+  display: inline-block;
+  width: 18px;   /* 画像のサイズ */
+  height: 18px;
+  
+  /* ↓↓↓ 【超重要】この「 url("~@/...") 」という書き方に変更して保存します！ ↓↓↓ */
+  background-image: url("~@/../public/icons/kefka.png");
+  
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin-right: 6px; /* 文字との隙間 */
+}
