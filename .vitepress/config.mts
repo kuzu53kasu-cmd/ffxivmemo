@@ -2,6 +2,8 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   base: '/ffxivmemo/', 
+    // ↓↓↓ この1行を追加して保存します ↓↓↓
+  cleanUrls: true,
   title: "memo", // サイト全体のタイトル
   description: "",
 

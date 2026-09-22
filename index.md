@@ -9,7 +9,7 @@ hero:
 <div class="card-container">
 
   <!-- 絶妖星乱舞のカード -->
-  <a href="/kefka" class="strategy-card">
+  <a href="/ffxivmemo/kefka" class="strategy-card">
     <div class="card-image-wrapper">
       <img src="/icons/kefka.png" alt="絶妖星乱舞" class="card-image">
     </div>
