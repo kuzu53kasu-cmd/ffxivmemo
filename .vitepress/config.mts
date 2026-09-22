@@ -14,10 +14,15 @@ export default defineConfig({
         text: 'menu',
         items: [
           { text: '🏠 メインページ', link: '/' },
-          // ↓↓↓ 文字の前に画像タグを直接埋め込みます ↓↓↓
+          
+          // ↓↓↓ HTMLタグを廃止し、VitePress公式の「icon」指定に書き換えます ↓↓↓
           { 
-            text: '<img src="/ffxivmemo/icons/kefka.png" style="width:18px; height:18px; display:inline-block; vertical-align:middle; margin-right:6px;"> 絶妖星乱舞', 
-            link: '/ffxivmemo/kefka' 
+            text: '絶妖星乱舞', 
+            link: '/kefka', // ※VitePress内での内部リンクは頭の /ffxivmemo は不要です
+            icon: {
+              src: '/icons/kefka.png', // public/icons/kefka.png を指す正しい書き方
+              alt: 'ケフカ'
+            }
           }
         ]
       }
