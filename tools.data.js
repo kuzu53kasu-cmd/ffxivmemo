@@ -25,6 +25,12 @@ const categories = {
       url: 'https://logs.enzyu.com/ja',
       title: 'LogTools',
       description: '絶のDPS統計'
+    },
+    {
+      url: 'https://analyzer.wtfdig.info/',
+      title: 'analyzer.wtfdig.info',
+      description: 'logsのURL貼り付けてワイプ原因探るやつ',
+      image: '/ffxivmemo/icons/wtfdig.png'
     }
   ],
   equipment: [
