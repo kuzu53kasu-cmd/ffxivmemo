@@ -18,7 +18,7 @@ export default defineConfig({
             text: '🤡 絶妖星乱舞', 
             link: '/kefka' 
           },
-          { text: '🔧 ツール集', link: '/tools' }
+          { text: '🔧 Tools', link: '/tools' }
         ]
       }
     ],

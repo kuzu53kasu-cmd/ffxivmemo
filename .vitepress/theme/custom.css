@@ -154,3 +154,31 @@
     padding: 12px;
   }
 }
+
+/* リンク先のプレビュー画像 */
+.vp-doc .tool-card-preview {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  border-radius: 6px;
+  background: var(--vp-c-bg-soft);
+}
+
+/* 長いタイトルもカード内に収める */
+.tool-card-title {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.tool-card-title > span {
+  flex-shrink: 0;
+}
+
+/* 説明文は最大3行 */
+.tool-card-description {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}

@@ -6,5 +6,8 @@
   "dependencies": {
     "vitepress": "^1.6.4",
     "vue": "^3.5.43"
+  },
+  "devDependencies": {
+    "cheerio": "1.0.0"
   }
 }

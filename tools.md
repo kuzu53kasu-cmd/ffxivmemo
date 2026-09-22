@@ -2,36 +2,81 @@
 layout: doc
 ---
 
-# ツール集
+<script setup>
+import { data as tools } from './tools.data.js'
 
-攻略や固定活動に使うリンクをまとめています。
+function hideImage(event) {
+  event.target.style.display = 'none'
+}
+</script>
 
-## 📊 logs
+# Tools
 
-::: details 戦闘ログの分析やスキル回しの確認に使うツール
+リンク集
+
+## 📊 logs関連
+
+::: details ログ分析、スキル回し
+
 <div class="tool-grid">
-  <a class="tool-card" href="https://example.com/" target="_blank" rel="noopener noreferrer">
-   <span class="tool-card-title">ログ分析ツール<span aria-hidden="true">↗</span></span>
-    <span class="tool-card-description">戦闘ログを確認して、スキル回しや軽減の改善に。</span>
-    <span class="tool-card-tag">戦闘分析</span>
-  </a>
-  <a class="tool-card" href="https://example.com/" target="_blank" rel="noopener noreferrer">
-    <span class="tool-card-title">スキル回しチェック<span aria-hidden="true">↗</span></span>
-    <span class="tool-card-description">アビリティの使用状況や、改善できるポイントを確認。</span>
-    <span class="tool-card-tag">振り返り</span>
+  <a
+    v-for="tool in tools.logs"
+    :key="tool.url"
+    class="tool-card"
+    :href="tool.url"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <img
+      v-if="tool.image"
+      class="tool-card-preview"
+      :src="tool.image"
+      alt=""
+      loading="lazy"
+      @error="hideImage"
+    >
+    <span class="tool-card-title">
+      {{ tool.title }}
+      <span aria-hidden="true">↗</span>
+    </span>
+    <span v-if="tool.description" class="tool-card-description">
+      {{ tool.description }}
+    </span>
+    <span class="tool-card-tag">{{ tool.site }}</span>
   </a>
 </div>
 
 :::
 
-## 🛡️ 攻略・軽減
+## 🏷 その他
 
-::: details ギミックの攻略や軽減計画に使うツール
+::: details もろもろ
+
 <div class="tool-grid">
-  <a class="tool-card" href="https://example.com/" target="_blank" rel="noopener noreferrer">
-    <span class="tool-card-title">軽減シミュレーター<span aria-hidden="true">↗</span></span>
-    <span class="tool-card-description">タイムラインに合わせて、パーティの軽減を検討。</span>
-    <span class="tool-card-tag">軽減計画</span>
+  <a
+    v-for="tool in tools.equipment"
+    :key="tool.url"
+    class="tool-card"
+    :href="tool.url"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <img
+      v-if="tool.image"
+      class="tool-card-preview"
+      :src="tool.image"
+      alt=""
+      loading="lazy"
+      @error="hideImage"
+    >
+    <span class="tool-card-title">
+      {{ tool.title }}
+      <span aria-hidden="true">↗</span>
+    </span>
+    <span v-if="tool.description" class="tool-card-description">
+      {{ tool.description }}
+    </span>
+    <span class="tool-card-tag">{{ tool.site }}</span>
   </a>
 </div>
 
