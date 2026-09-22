@@ -12,9 +12,11 @@ export default defineConfig({
         text: 'menu',
         items: [
           { text: '🏠 メインページ', link: '/' },
-          
-          // ↓↓↓ 余計なHTMLタグをすべて消し、シンプルな文字だけにします ↓↓↓
-          { text: '絶妖星乱舞', link: '/kefka' }
+          // ↓↓↓ 文字の前に画像タグを直接埋め込みます ↓↓↓
+          { 
+            text: '🤡 絶妖星乱舞', 
+            link: '/kefka' 
+          }
         ]
       }
     ],
