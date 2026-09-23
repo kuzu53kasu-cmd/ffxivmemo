@@ -200,3 +200,190 @@
 .macro-spacer {
   height: 1px;
 }
+/* 技ごとの説明 */
+.vp-doc .mechanic {
+  margin: 24px 0;
+}
+
+/* 技名：左に赤いライン */
+.vp-doc .mechanic-title {
+  border-left: 4px solid #9c44ef;
+  padding-left: 12px;
+  color: var(--vp-c-text-1);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+/* 動きの説明 */
+.vp-doc .mechanic-description {
+  margin-top: 10px;
+  color: var(--vp-c-text-1);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.vp-doc .mechanic-description p {
+  margin: 8px 0;
+}
+
+/* コピー枠の下に添える説明文 */
+.vp-doc p.macro-caption {
+  margin: -8px 0 0px;
+  padding-left: 12px;
+  color: var(--vp-c-text-2);
+  font-size: 12px;
+  line-height: 1.6;
+}
+/* 赤色の強調文字 */
+.vp-doc .text-red {
+  color: #e53935;
+  font-weight: 700;
+}
+
+/* ダークモードでは明るい赤に */
+.dark .vp-doc .text-red {
+  color: #ff8080;
+}
+
+.vp-doc .strategy-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 12px 0;
+  border-radius: 8px;
+}
+/* 番号付きの攻略手順 */
+.vp-doc ol.strategy-steps {
+  list-style: none;
+  counter-reset: strategy-step;
+  margin: 20px 0;
+  padding: 0;
+}
+
+.vp-doc .strategy-steps > li {
+  position: relative;
+  counter-increment: strategy-step;
+  margin: 0;
+  padding: 0 0 22px 42px;
+  min-height: 28px;
+}
+
+/* 番号 */
+.vp-doc .strategy-steps > li::before {
+  content: counter(strategy-step);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border: 1px solid var(--vp-c-brand-1);
+  border-radius: 50%;
+  color: var(--vp-c-brand-1);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* 番号同士をつなぐ線 */
+.vp-doc .strategy-steps > li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 32px;
+  bottom: 6px;
+  left: 13px;
+  width: 1px;
+  background: var(--vp-c-divider);
+}
+
+.vp-doc .strategy-steps > li:last-child {
+  padding-bottom: 0;
+}
+
+/* 手順の本文 */
+.vp-doc .strategy-steps > li > strong {
+  display: block;
+  padding-top: 2px;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* 補足・注意書き */
+.vp-doc .strategy-steps .step-note {
+  display: block;
+  margin-top: 5px;
+  color: var(--vp-c-text-2);
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+/* 手順リストを控えめな見た目に */
+.vp-doc ol.strategy-steps {
+  margin: 12px 0;
+}
+
+.vp-doc .strategy-steps > li {
+  padding: 0 0 0px 26px;
+  min-height: 0;
+}
+
+/* 丸枠をなくし、小さな番号だけに */
+.vp-doc .strategy-steps > li::before {
+  content: counter(strategy-step) ".";
+  display: block;
+  top: 0;
+  width: 20px;
+  height: auto;
+  border: none;
+  border-radius: 0;
+  color: var(--vp-c-text-2);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+/* 縦線を消す */
+.vp-doc .strategy-steps > li::after {
+  display: none;
+}
+
+/* 本文の太字を解除 */
+.vp-doc .strategy-steps > li > strong {
+  padding-top: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+/* 補足は小さく、本文の近くに */
+.vp-doc .strategy-steps .step-note {
+  margin-top: 2px;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.vp-doc .strategy-subheading {
+  margin: 24px 0 10px;
+  padding-top: 14px;
+  border-top: 1px solid var(--vp-c-divider);
+  color: var(--vp-c-text-1);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+/* 控えめな補足メモ */
+.vp-doc p.mini-tip {
+  margin: 10px 0;
+  padding: 2px 0 2px 10px;
+  border-left: 2px solid var(--vp-c-divider);
+  color: var(--vp-c-text-2);
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.vp-doc .mini-tip-label {
+  margin-right: 6px;
+  font-weight: 600;
+}
