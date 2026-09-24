@@ -363,14 +363,39 @@
   line-height: 1.6;
 }
 
+/* 背景を付けず、文字と横線で区切る */
 .vp-doc .strategy-subheading {
-  margin: 24px 0 10px;
-  padding-top: 14px;
-  border-top: 1px solid var(--vp-c-divider);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 26px 0 12px;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  background: transparent;
   color: var(--vp-c-text-1);
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 700;
   line-height: 1.6;
+}
+
+/* 見出しの右側に伸びるアクセント線 */
+.vp-doc .strategy-subheading::after {
+  content: "";
+  flex: 1;
+  min-width: 24px;
+  height: 2px;
+  background: var(--vp-c-brand-1);
+  opacity: 0.45;
+}
+
+/* 見出しの左に短いアクセント線 */
+.vp-doc .strategy-subheading::before {
+  content: "";
+  flex: 0 0 20px;
+  height: 2px;
+  background: var(--vp-c-brand-1);
+  opacity: 0.45;
 }
 
 /* 控えめな補足メモ */
@@ -386,4 +411,62 @@
 .vp-doc .mini-tip-label {
   margin-right: 6px;
   font-weight: 600;
+}
+
+/* ギミック内のチェックポイント見出し */
+.vp-doc .checkpoint-heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 22px 0 8px;
+  color: var(--vp-c-text-1);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+/* 控えめな番号 */
+.vp-doc .checkpoint-number {
+  flex-shrink: 0;
+  color: var(--vp-c-text-2);
+  font-size: 11px;
+  font-weight: 400;
+  font-variant-numeric: tabular-nums;
+}
+
+/* 見出しの右側に伸びる薄い線 */
+.vp-doc .checkpoint-heading::after {
+  content: "";
+  flex: 1;
+  min-width: 20px;
+  height: 1px;
+  background: var(--vp-c-divider);
+}
+/* チェックポイント見出しを少し強調 */
+.vp-doc .checkpoint-heading {
+  margin: 26px 0 12px;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* 番号にアクセントカラーを付ける */
+.vp-doc .checkpoint-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 30px;
+  height: 26px;
+  padding: 0 6px;
+  border-radius: 4px;
+  background: var(--vp-c-brand-soft);
+  color: var(--vp-c-brand-1);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* 横線にも薄く色を付ける */
+.vp-doc .checkpoint-heading::after {
+  height: 2px;
+  background: var(--vp-c-brand-soft);
 }

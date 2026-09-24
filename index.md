@@ -27,7 +27,7 @@ hero:
     </div>
   </a>
 
-  <!-- 別のコンテンツ（準備中）のカード（増やしたい時はこれをコピー） -->
+  <!-- 別のコンテンツ（準備中）のカード（増やしたい時はこれをコピー）
   <div class="strategy-card disabled">
     <div class="card-image-wrapper">
       <img src="/icons/mente.png" alt="準備中" class="card-image">
@@ -36,5 +36,6 @@ hero:
       🛠️ temp
     </div>
   </div>
+ -->
 
 </div>
