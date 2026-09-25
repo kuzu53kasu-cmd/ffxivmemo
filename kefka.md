@@ -93,120 +93,121 @@ H2 GC1鼓舞展開陣　GC23イルミコンソレ士気陣
 
 ::: tip はじめに
 
-タンク強は、基本的に以下の順で受けるのでそれ前提で記載。<br>
+タンク強攻撃は、基本的に以下の順で受けることを前提に記載している。<br>
 **MTフルバフ → STフルバフ → ST無敵 → MT無敵**<br>
-ただし、場合によっては「MT無敵 → STフルバフ → MTフルバフ → ST無敵」など、変則的になることもある。<br>
+ただし、「MT無敵 → STフルバフ → MTフルバフ → ST無敵」など、変則的になることもある。<br>
 **受け方によってヒーラーの動きも変わるため、タンク同士の打ち合わせには耳を傾けておくこと！**
+
+::: danger 特に死人がでやすいギミックは<span class="text-red"><strong>背景を赤色</strong></span>で記載。<br>
 :::
 
 <div class="mechanic">
   <div class="mechanic-title">カウント開始～開幕</div>
   <div class="mechanic-description">
 
-開幕カウント10秒になったらMTに鼓舞。<br>
-0着するように獄炎法詠唱、着弾したら即連環計、後のタンク強のために陣を置く。<br>
-**また、先転化→後フローにしておくと、ファイガ前に妖精が返ってきて都合がいい。**
+カウント残り10秒でMTに鼓舞。<br>
+カウント0で着弾するように獄炎法を詠唱し、着弾後すぐに連環計を使用する。続けて、次のタンク強攻撃に備えて陣を設置する。<br>
+<strong>転化 → エーテルフローの順に使用しておくと、ファイガ前に妖精が戻ってくるので、その後の動きがスムーズになる。</strong>
 
   </div>
 </div>
 
 <div class="mechanic">
-  <div class="mechanic-title">ばりばりルインガ1(タンク強攻撃1)</div>
+  <div class="mechanic-title">ばりばりルインガ1（タンク強攻撃1）</div>
   <div class="mechanic-description">
 
-強攻撃→AA→強攻撃→AA<br>
-MTフルバフ＋陣＋リプ＋牽制＋PHの単体軽減+STの短バフがあれば、合計被ダメージは約300,000～350,000<br>
-攻撃の間に2秒の猶予があるため、基本的にはPHのインスタントヒール+HoT等々で戻る想定でよい。<br>
-
-PHの単体軽減、STの短バフが抜けるとMTがちゃんとバフ炊いてても厳しい。<br>
-MTが繰り返し落ちるようなら、ログで周囲の軽減の有無を確認すること。<br>
-<span class="text-red">**アドルはここには不要！！！**</span><br>
-
+強攻撃 → AA → 強攻撃 → AAの順に受ける。<br>
+MTフルバフ＋陣＋リプ＋牽制＋PHの単体軽減＋STの短バフがあれば、合計被ダメージは約300,000～350,000。<br>
+各攻撃の間に2秒の猶予があるため、基本的にはPHのインスタントヒールやHoTで戻す想定でよい。<br>
+PHの単体軽減やSTの短バフが抜けると、MTが適切にバフを使っていても厳しい。<br>
+MTが繰り返し落ちるようなら、ログで周囲の軽減が入っているか確認しよう。<br>
+<span class="text-red"><strong>アドルはここでは不要！</strong></span><br>
 
   </div>
 </div>
 
-<div class="mechanic">
+<div class="mechanic  mechanic-danger">
   <div class="mechanic-title">神々の像1</div>
   <div class="mechanic-description">
 
-素受けでファイガ210,000→波動砲or塔踏み325,000→トラップ165,000=<span class="text-red">**700,000ダメージ！！**</span>の恐ろしいギミック。<br>
-特に<span class="text-red">**ファイガ→波動砲or塔踏みの間には5秒しか隙間がない**</span>ので、慣れないうちは大変。<br>
-また、痛すぎる波動砲には牽制アドルが効かないので、全体軽減のみで何とかする必要あり。<br>
+素受けでファイガ210,000 → 波動砲または塔踏み325,000 → トラップ165,000と続き、<span class="text-red"><strong>合計約700,000ダメージ</strong></span>を受けるギミック。<br>
+特に、<span class="text-red"><strong>ファイガから波動砲・塔踏みまでは5秒しか猶予がない</strong></span>ため、慣れないうちは戻し軽減が忙しい。<br>
+また、大ダメージを受ける波動砲には牽制・アドルが効かないため、全体軽減で耐える必要がある。<br>
 
-学者の動きは、<br>
+基本的な動きは以下の通り。<br>
+
 <ol class="strategy-steps">
   <li>
     <strong>事前に鼓舞展開</strong>
   </li>
   <li>
-    <strong>転化バフが切れたら、妖精を中央へ移動</strong>
+    <strong>転化の効果が切れたら、妖精を中央へ移動</strong>
     <span class="step-note">散開・頭割りの移動と重なるため、操作がやや忙しい。</span>
   </li>
   <li>
-    <strong>陣を設置し、セラフィムを起動</strong>
+    <strong>陣を設置し、サモン・セラフィムを使用</strong>
   </li>
   <li>
     <strong>ファイガを受けたら、コンソレ1回目＋イルミ</strong>
-    <span class="step-note">イルミは次の「裁きの光」まで持たせるイメージで</span>
+    <span class="step-note">イルミは、次の「裁きの光」まで効果が残るように使用する。</span>
   </li>
   <li>
-    <strong>波動砲＆塔踏みを受けたら、不撓不屈</strong>
+    <strong>波動砲・塔踏みを受けたら、不撓不屈</strong>
   </li>
   <li>
     <strong>トラップを受けたら、コンソレ2回目</strong>
     <span class="step-note">次の「裁きの光」に備えて使用する。</span>
   </li>
 </ol>
-上記の流れが理想だが、波動砲で落ちるようなら、「神々の像」の詠唱完了直後に疾風怒涛を入れておく。<br>
-さらに、手順4のタイミング（ファイガ被弾後）でセラフィズム＋アクセッションを使用し、波動砲に備えよう。<br>
+
+上記の流れが理想だが、波動砲で落ちるようなら、「神々の像」の詠唱完了直後に疾風怒涛を使用する。<br>
+それでもだめなら、手順4のタイミング（ファイガ被弾後）でセラフィズム＋アクセッションを使用し、波動砲を耐えよう。<br>
+
 <p class="mini-tip">
   <span class="mini-tip-label">補足：</span>
-  疾風怒涛は、PHが2分軽減（Nセク or テンパ）を使うなら不要、使わないなら必要、という基準で判断するとよい
+  疾風怒涛は、PHが2分軽減（Nセクまたはテンパ）を使うなら不要、使わないなら必要、という基準で判断するとよい。
 </p>
 
-
 <div class="strategy-subheading">タンク・レンジの90秒軽減について</div>
-タンク、レンジの90秒軽減は全部ここに使ってもらおう！<br>
-90秒軽減のタイミングは↓　神々の象詠唱完了後一拍おいていれるとギリギリ波動砲＋塔踏みまでもつ。<br>
-<img src="/icons/kami1.png" alt="神々の象1の軽減タイミング" class="strategy-image" />
-これより遅れると、神々の像2回目の重力踏みまでに軽減のリキャが返ってこない。<br>
-
+タンク・レンジの90秒軽減は、すべてここに使ってもらおう！<br>
+使用タイミングは以下の通り。「神々の像」の詠唱完了から一拍置いて使用すると、波動砲・塔踏みまでギリギリ効果が残る。<br>
+<img src="/icons/kami1.png" alt="神々の像1の軽減タイミング" class="strategy-image" />
+これより遅れると、「神々の像2」の重力踏みまでにリキャストが戻らないので注意。<br>
 
   </div>
 </div>
 
-<div class="mechanic">
+<div class="mechanic mechanic-danger">
   <div class="mechanic-title">裁きの光1</div>
   <div class="mechanic-description">
 
 素受けで約300,000ダメージ。<br>
 リプ＋アドル＋牽制＋イルミ＋コンソレがあれば、HPが約20,000残る想定。<br>
-さらにパッセが入れば、約50,000残る。<br>
-アドルもパッセもない場合は、コンソレのバリアだけでは耐えられないため、追加で士気が必須。<br>
-**リプ、アドル、牽制は詠唱バーギリギリで入れると、次のタンク強にも乗る**<br>
-<span class="text-red">アドルはここに入れてもらおう！</span><br>
-<span class="text-red">ナイトがいるなら、必ずパッセももらおう！</span><br>
+さらにパッセが入れば、HPが約50,000残る。<br>
+アドルもパッセもない場合は、コンソレのバリアだけでは耐えられないため、追加で意気が必須。<br>
+<strong>リプ・アドル・牽制は、詠唱完了ギリギリに使用すると、次のタンク強攻撃にも効果が残る。</strong><br>
+<span class="text-red"><strong>アドルはここに入れてもらおう！</strong></span><br>
+<span class="text-red"><strong>ナイトがいるなら、必ずパッセももらおう！！</strong></span><br>
+
 <p class="mini-tip">
   <span class="mini-tip-label">補足：</span>
-波動砲に陣使うならここで陣は使えない、、、ハズ。陣使う場合早置きしないと重力弾受けまでに帰ってこない<br>
+  波動砲に陣を使っている場合、ここではリキャストが戻っていないはず。ここで陣を使う場合も、早めに設置しないと、次の重力弾までにリキャストが戻らないので注意。
 </p>
 
   </div>
 </div>
 
 <div class="mechanic">
-  <div class="mechanic-title">ハイパードライブ1(タンク強攻撃2)</div>
+  <div class="mechanic-title">ハイパードライブ1（タンク強攻撃2）</div>
   <div class="mechanic-description">
 
-強攻撃 → AA → 強攻撃 → AA → 強攻撃 → AA<br>
+強攻撃 → AA → 強攻撃 → AA → 強攻撃 → AAの順に受ける。<br>
 1発あたりはルインガよりやや弱いが、回数が多いため総ダメージは大きい。<br>
 STフルバフ＋リプ＋牽制＋アドル＋PHの単体軽減＋MTの短バフがあれば、合計被ダメージは約300,000～350,000。<br>
-各攻撃の間に2秒の猶予があるため、基本的にはPHのインスタントヒールやHoTなどで戻す想定でよい。<br>
-
+各攻撃の間に2秒の猶予があるため、基本的にはPHのインスタントヒールやHoTで戻す想定でよい。<br>
 PHの単体軽減やMTの短バフが抜けると、STが適切にバフを使っていても厳しい。<br>
-STが繰り返し落ちるようなら、ログで周囲の軽減が入っているか確認すること。<br>
-**リプ・アドル・牽制は、直前の「裁きの光」の詠唱完了ギリギリに入れると、このタンク強攻撃にも効果が残る。使用タイミングを意識してもらおう！**<br>
+STが繰り返し落ちるようなら、ログで周囲の軽減が入っているか確認しよう。<br>
+<strong>リプ・アドル・牽制は、直前の「裁きの光」の詠唱完了ギリギリに使用すると、このタンク強攻撃にも効果が残る。使用タイミングを意識してもらおう！</strong><br>
 
   </div>
 </div>
@@ -217,73 +218,109 @@ STが繰り返し落ちるようなら、ログで周囲の軽減が入ってい
 
 <div class="checkpoint-heading">
   <span class="checkpoint-number">1</span>
-  <span>重力弾 + 岩石弾 1</span>
+  <span>重力弾1 → 岩石弾1</span>
 </div>
-重力弾50,000×4回＋岩石弾20,000で、合計約220,000ダメージ。軽減なしでも乱数次第では耐えられるが、陣とバリアは入れておくのが無難。<br>
-以下のタイミングでセラフィズムを起動し、次のGCDでアクセッション → 陣＋囁きの順に使用する。陣囁きセラフィズムの3重HoTで2回目の重力弾までの戻しを行う。<br>
-ここはルインガも相まって戻しの時間があるのでHoTに頼り、不撓不屈＆フェイブレッシングは、重力弾＋岩石弾2に残しておいたほうが良い。<br>
-<span class="text-red">ここで陣を使わないと、重力踏みの際に陣が返ってこない！</span>
-<img src="/icons/kami2.png" alt="神々の象2の軽減タイミング" class="strategy-image" />
+素受けで重力弾50,000×4回＋岩石弾20,000、合計約220,000ダメージ。軽減なしでも乱数次第では耐えられるが、陣とバリアは入れておくのが無難。<br>
+以下のタイミングでセラフィズムを使用し、次のGCDでアクセッション → 陣＋囁きの順に使用する。陣・囁き・セラフィズムの3つのHoTで、2回目の重力弾までにHPを戻す。<br>
+間にルインガを挟むため、戻しの時間には余裕がある。ここはHoTに任せ、不撓不屈とフェイブレッシングは2回目の重力弾・岩石弾に残しておこう。<br>
+<span class="text-red"><strong>陣はこのタイミングで使っておかないと、後の重力踏みまでにリキャストが戻らないので注意！</strong></span><br>
+<img src="/icons/kami2.png" alt="神々の像2の軽減タイミング" class="strategy-image" />
 
 <div class="checkpoint-heading">
   <span class="checkpoint-number">2</span>
-  <span>ばりばりルインガ2(タンク強攻撃3) + 神々の像からの半面焼き1</span>
+  <span>ばりばりルインガ2（タンク強攻撃3）→ 神々の像からの半面焼き1</span>
 </div>
-無敵受けなのでタンクケアは基本不要。STが戦士or暗黒だとケアが必要になる。<br>
+無敵受けなので、タンクケアは基本不要。ただし、STが戦士・暗黒の場合はケアが必要になる。<br>
+上述のタイミングでセラフィズムを使っておくと、無詠唱のアクセッションを使いながら半面焼きの安置へ移動できるので楽。<br>
+<img src="/icons/kami2-2.png" alt="半面焼きの安置への移動とアクセッションの使用タイミング" class="strategy-image" style="display: block; width: 520px; max-width: 100%; height: auto; margin-left: auto; margin-right: auto;" />
 
-半面焼きの安置移動は、上のタイミングでセラフィズム起動しておくと、アクセッション使いながら移動できるので楽<br>
-<img src="/icons/kami2-2.png" alt="神々の象2の軽減タイミング" class="strategy-image" style="display: block; width: 520px; max-width: 100%; height: auto; margin-left: auto; margin-right: auto;" />
-  
 <div class="checkpoint-heading">
   <span class="checkpoint-number">3</span>
-  <span>重力弾 + 岩石弾 2 + 神々の像からの半面焼き2</span>
+  <span>重力弾2 → 岩石弾2 → 神々の像からの半面焼き2</span>
 </div>
-ここは陣を使えないので、バリアのみで耐える。戻しは不撓不屈、フェイブレで行う。<br>
-岩石弾を受けたら次のトラップ + 重力踏みに備えて鼓舞展開しておく。<br>
-<span class="text-red">岩石担当の場合、半面焼きの安置に移動しながら鼓舞展開するのが相当シビア！迅速魔＋スプリント必須！！！</span>
+ここは陣を使えないため、バリアで耐え、不撓不屈とフェイブレッシングで戻す。<br>
+岩石弾を受けたら、次のトラップ＋重力踏みに備えて鼓舞展開しておく。<br>
+<span class="text-red"><strong>岩石担当の場合、半面焼きの安置へ移動しつつ鼓舞展開する必要があり、タイミングがかなりシビア！迅速魔＋スプリント推奨！</strong></span><br>
 
+<div class="checkpoint-danger">
 <div class="checkpoint-heading">
   <span class="checkpoint-number">4</span>
-  <span>トラップ + 重力踏み</span>
+  <span>トラップ＋重力踏み</span>
 </div>
-<br>
-素受けでトラップ165,000 + グラビガ65,000×4 = <span class="text-red">42,5000！</span>のとてつもないダメージをうける。<br>
-鼓舞展開＋疾風怒涛＋陣でなんとかなることを祈ろう。<br>
-周りがまともに軽減使ってくれるなら、3人受けでも余裕で耐える。<br>
-<strong>陣および疾風怒涛は、半面焼きのエフェクトが出た後に置くと、後の裁きの光まで全てに乗るのでお勧め。</strong>
-<div class="strategy-subheading">ヒラ以外の軽減について</div>
-牽制リプ、タンクレンジの90秒軽減はここに使ってもらったほうが良い。<br>
-トラップ受けた後or受ける直前に使って貰えれば、グラビガ～裁きまで全てに乗る。<br>
-<strong>裁きの光1でアドルを使った場合ここにはないので注意！！</strong>
+素受けでトラップ165,000＋グラビガ65,000×4回、<span class="text-red"><strong>合計約425,000ダメージ！</strong></span><br>
+鼓舞展開＋疾風怒涛＋陣で備えよう。周囲の軽減もしっかり入っていれば、3人受けでも余裕を持って耐えられる。<br>
+<strong>陣と疾風怒涛は、半面焼きのエフェクトが出た後に使用すると、次の「裁きの光」まで効果が残るのでおすすめ。</strong><br>
+<strong>重力踏みが終わるあたりで2分バースト。ここでずれるとP4開幕まで修正できないため、必ず合わせよう！</strong><br>
+
+<div class="strategy-subheading">ヒーラー以外の軽減について</div>
+リプ・牽制と、タンク・レンジの90秒軽減はここに使ってもらおう。<br>
+トラップを受ける直前か直後に使用してもらえば、重力踏みから「裁きの光」まで効果が残る。<br>
+<span class="text-red"><strong>「裁きの光1」でアドルを使っている場合、ここではリキャストが戻っていないので注意！</strong></span><br>
 </div>
+
+  </div>
 </div>
 
 <div class="mechanic">
   <div class="mechanic-title">裁きの光2</div>
   <div class="mechanic-description">
-直前の重力踏みでの軽減の残り香があるので、やたら硬くなりがち。<br>
-基本なにもしなくてよい。<br>
+
+直前の重力踏みで使った軽減が残っているため、被ダメージはかなり抑えられるはず。<br>
+基本的にバリアは不要だが、初回のトライでは様子見で張っておくと安心。<br>
+
   </div>
 </div>
 
 <div class="mechanic">
-  <div class="mechanic-title">ハイパードライブ2(タンク強攻撃4)</div>
+  <div class="mechanic-title">ハイパードライブ2（タンク強攻撃4）</div>
   <div class="mechanic-description">
+
 P1最後のタンク強攻撃。<br>
-無敵受けなので何もする必要はない。<br>
+無敵受けなので、タンクケアは基本不要。ただし、MTが戦士・暗黒で戻しに不安があるなら、深謀を入れておくと安心。<br>
+
   </div>
 </div>
 
 <div class="mechanic">
   <div class="mechanic-title">ずびずばテレポ</div>
   <div class="mechanic-description">
+
 <div class="checkpoint-heading">
   <span class="checkpoint-number">1</span>
-  <span>テレポ配置</span>
+  <span>ずびずばテレポ詠唱 → テレポ配置 → トラップ</span>
 </div>
- 配置するたび地味に2,000ダメくらい食らう<br>
+ずびずばテレポの詠唱開始に合わせて、トラップ受けに備えた意気軒高のバリアを張っておく。<br>
+テレポを配置するたびに約2,000×2回分のダメージでバリアが削られるが、気にしなくてよい。<br>
+PHがすでにバリア（Nセクまたはカレス）を張っている場合は、ここでの意気軒高は省略する。<br>
 
+
+テレポの配置が終わったら、サモン・セラフィム → 陣 → 囁き → イルミの順に使用する。<br>
+<p class="mini-tip">
+  <span class="mini-tip-label">補足：</span>
+  イルミはトラップ受けには間に合わないが、神気～ファイガ用なので問題なし。
+</p>
+トラップを受けたら、聖母（混乱）または睡魔の神気に備えてコンソレ1回目を使用する。<br>
+
+<div class="checkpoint-heading">
+  <span class="checkpoint-number">2</span>
+  <span>聖母（混乱）または睡魔の神気</span>
 </div>
+素受けで約220,000ダメージ。<br>
+コンソレ＋陣＋イルミに加えて、PHの軽減（サンサインまたはテンパ）があれば、HPへのダメージは約125,000に抑えられる。<br>
+被弾後は、次のファイガに備えてコンソレ2回目を使用する。<br>
+
+<div class="checkpoint-danger">
+<div class="checkpoint-heading">
+  <span class="checkpoint-number">3</span>
+  <span>めらめらファイガ</span>
+</div>
+素受けで約210,000ダメージ。<br>
+以下の通り、コンソレ＋イルミだけでもHPへのダメージは約170,000に抑えられる。<br>
+神気で受けたダメージをしっかり戻すことが大事！不安な場合は不撓不屈、意気を使用すること。<br>
+<img src="/icons/telepo.png" alt="めらめらファイガの被ダメージと軽減" class="strategy-image" style="display: block; width: 520px; max-width: 100%; height: auto; margin-left: auto; margin-right: auto;" />
+</div>
+
+  </div>
 </div>
 
 ::::
